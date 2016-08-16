@@ -170,30 +170,35 @@
                      id="events-menu-locator"
                      class="main {{ active(request, '^/events/') }}">Events</a>
                 </li>
-                <li>
-                  <a href="https://blog.mozilla.org/mozillareps"
-                     id="blog-menu-locator"
-                     class="main">Blog</a>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Communication</a>
+                  <div class="dropdown-content">
+                    <a href="https://blog.mozilla.org/mozillareps"
+                      id="blog-menu-locator"
+                      class="main">Blog</a>
+                    <a href="http://planet.mozillareps.org"
+                      id="planet-menu-locator"
+                      class="main">Planet</a>
+                    <a href="https://discourse.mozilla-community.org/c/reps"
+                      id="forum-menu-locator"
+                      class="main">Forum</a>
+                  </div>
                 </li>
-                <li>
-                  <a href="http://planet.mozillareps.org"
-                     id="planet-menu-locator"
-                     class="main">Planet</a>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Documentation</a>
+                  <div class="dropdown-content">
+                    <a href="https://wiki.mozilla.org/ReMo"
+                      id="wiki-menu-locator"
+                      class="main">Wiki</a>
+                    <a href="{{ url('faq') }}"
+                      id="faq-menu-locator"
+                      class="main {{ active(request, '^/faq/$') }}">FAQ</a>
+                  </div>
                 </li>
-                <li>
-                  <a href="https://wiki.mozilla.org/ReMo"
-                     id="wiki-menu-locator"
-                     class="main">Wiki</a>
-                </li>
-                <li>
+                <li class="last">
                   <a href="{{ url('labs') }}"
                      id="labs-menu-locator"
                      class="main {{ active(request, '^/labs/$') }}">Labs</a>
-                </li>
-                <li class="last">
-                  <a href="{{ url('faq') }}"
-                     id="faq-menu-locator"
-                     class="main {{ active(request, '^/faq/$') }}">FAQ</a>
                 </li>
               </ul>
             </nav>

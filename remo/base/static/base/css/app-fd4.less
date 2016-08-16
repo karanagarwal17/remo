@@ -521,6 +521,37 @@ label.required:after {
     }
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 #navigation-box-mobile ul {
     float: none;
     margin: 10px 0 0 0;
